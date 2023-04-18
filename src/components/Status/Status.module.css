@@ -1,0 +1,22 @@
+.status {
+    display: inline-block;
+    width: 80px;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.inactive {
+    color: var(--red);
+    background-color: var(--red-background);
+    border-color: var(--red);
+}
+
+.active {
+    color: var(--green);
+    background-color: var(--green-background);
+    border-color: var(--green);
+}

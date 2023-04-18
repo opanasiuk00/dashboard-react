@@ -1,0 +1,45 @@
+.MenuLink {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 14px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 11px;
+    color: var(--gray-link);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    transition: all var(--duration);
+    cursor: pointer;
+}
+
+.MenuLink svg {
+    fill: var(--gray-link);
+    transition: all var(--duration);
+}
+
+.MenuLink span {
+    display: flex;
+    align-items: center;
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.arrow svg {
+    width: 18px;
+    height: 18px;
+}
+
+.MenuLink:hover,
+.active {
+    background: var(--active-link);
+    color: var(--white);
+}
+
+.MenuLink:hover svg,
+.active svg {
+    fill: var(--white);
+}

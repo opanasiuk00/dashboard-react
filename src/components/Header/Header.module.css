@@ -1,0 +1,51 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 15px;
+}
+
+.button span {
+    height: 2px;
+    width: 100%;
+    background: var(--gray-link);
+    position: absolute;
+    left: 0;
+    border-radius: 2px;
+    transition: all var(--duration);
+}
+
+.button:hover span {
+    background: var(--active-link);
+}
+
+.line1 {
+    top: 0;
+}
+.line2 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.line3 {
+    bottom: 0;
+}
+
+.active .line1 {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+}
+.active .line2 {
+    opacity: 0;
+}
+.active .line3 {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+}
