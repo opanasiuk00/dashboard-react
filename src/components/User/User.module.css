@@ -1,0 +1,41 @@
+.user {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "photo name"
+        "photo position";
+    align-items: center;
+    gap: 0 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color var(--duration);
+    position: relative;
+}
+
+.user:hover {
+    border-color: var(--gray-link);
+}
+
+.photo {
+    grid-area: photo;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.name {
+    grid-area: name;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.position {
+    grid-area: position;
+    color: var(--user-position);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}

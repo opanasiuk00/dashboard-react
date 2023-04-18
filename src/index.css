@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --background: rgba(250, 251, 255, 1);
+    --white: rgba(255, 255, 255, 1);
+    --black: rgba(0, 0, 0, 1);
+    --gray-link: rgba(145, 151, 179, 1);
+    --gray: rgba(181, 183, 192, 1);
+    --black-light: rgba(41, 45, 50, 1);
+    --green-light: rgba(22, 192, 152, 1);
+    --green: rgba(0, 135, 103, 1);
+    --green-background: rgba(22, 192, 152, 0.38);
+    --input-background: rgba(249, 251, 255, 1);
+    --red: rgba(223, 4, 4, 1);
+    --red-background: rgba(255, 197, 197, 1);
+    --active-link: rgba(89, 50, 234, 1);
+    --duration: 0.3s ease;
+    --user-position: rgba(117, 117, 117, 1);
+    --button-hover: rgb(195, 193, 193);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
